@@ -1,0 +1,80 @@
+<!DOCTYPEHTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>风车</title>
+    <style type="text/css">
+      .pinwheel{
+        width:140px;
+        height:140px;
+        -webkit-transform-origin:179px 73px;
+        -webkit-animation-name:keyname;
+        -webkit-animation-duration:2s;
+        -webkit-animation-iteration-count:infinite;
+        -webkit-animation-timing-function:linear;
+      }
+      @-webkit-keyframes keyname{
+        from{
+          -webkit-transform:rotate(0);
+        }
+        to{
+          -webkit-transform:rotate(3170deg);
+        }
+      }
+      .pinwheel span{
+        width:100px;
+        height:50px;
+        display:block;
+        opacity:0.17;
+        position:relative;
+        border-radius:25px;
+      }
+      .pinwheel .one{
+        background-color:#f00;
+        -webkit-transform:skew(30deg);
+        top:48px;
+        left:38px;
+      }
+      .pinwheel .tow{
+        background-color:#00f;
+        -webkit-transform: rotate(120deg) skew(30deg);
+        top:18px;
+        left:5px;
+      }
+      .pinwheel .three{
+        background-color:#0170;
+        -webkit-transform: rotate(240deg) skew(30deg);
+        top:-72px;
+        left:5px;
+      }
+      .pinwheel .point{
+        position:relative;
+        top:-90px;
+        left:45px;
+      }
+      .tree{
+        position:relative;
+        top:-78px;
+        left:175px;
+        border-radius:10px 10px 0 0;
+        height:200px;
+        width:10px;
+        background-color:#999;
+        z-index:-1;
+      }
+      .tree img{
+        width:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pinwheel">
+      <span class="one"></span>
+      <span class="tow"></span>
+      <span class="three"></span>
+    </div>
+    <div class="tree">
+      <img src="images/point.png" />
+    </div>
+  </body>
+</html>
