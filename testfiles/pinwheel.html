@@ -7,19 +7,6 @@
       .pinwheel{
         width:140px;
         height:140px;
-        -webkit-transform-origin:179px 73px;
-        -webkit-animation-name:keyname;
-        -webkit-animation-duration:2s;
-        -webkit-animation-iteration-count:infinite;
-        -webkit-animation-timing-function:linear;
-      }
-      @-webkit-keyframes keyname{
-        from{
-          -webkit-transform:rotate(0);
-        }
-        to{
-          -webkit-transform:rotate(3170deg);
-        }
       }
       .pinwheel span{
         width:100px;
@@ -37,13 +24,13 @@
       }
       .pinwheel .tow{
         background-color:#00f;
-        -webkit-transform: rotate(120deg) skew(30deg);
+        -webkit-transform:rotate(120deg) skew(30deg);
         top:18px;
         left:5px;
       }
       .pinwheel .three{
         background-color:#0170;
-        -webkit-transform: rotate(240deg) skew(30deg);
+        -webkit-transform:rotate(240deg) skew(30deg);
         top:-72px;
         left:5px;
       }
@@ -66,6 +53,23 @@
         width:10px;
       }
     </style>
+    <style type="text/css">
+      .pinwheel{
+        -webkit-transform-origin:179px 73px;
+        -webkit-animation-name:keyname;
+        -webkit-animation-duration:5s;
+        -webkit-animation-iteration-count:infinite;
+        -webkit-animation-timing-function:linear;
+      }
+      @-webkit-keyframes keyname{
+        from{
+          -webkit-transform:rotate(0);
+        }
+        to{
+          -webkit-transform:rotate(3170deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="pinwheel">
@@ -74,7 +78,7 @@
       <span class="three"></span>
     </div>
     <div class="tree">
-      <img src="images/point.png" />
+      <!--img src="images/point.png" /-->
     </div>
   </body>
 </html>
